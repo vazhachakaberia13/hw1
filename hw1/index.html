@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Information</title>
+  </head>
+  <body>
+    <script>
+      let firstName = prompt("Enter your first name:");
+      let lastName = prompt("Enter your last name:");
+      let birthYear = prompt("Enter your year of birth:");
+      let residence = prompt("Enter your place of residence:");
+
+      let currentYear = new Date().getFullYear();
+      let age = currentYear - birthYear;
+
+      alert(
+        "Hello " +
+          firstName +
+          " " +
+          lastName +
+          ", I am glad that you are already " +
+          age +
+          " years old and live in " +
+          residence +
+          "."
+      );
+    </script>
+  </body>
+</html>
